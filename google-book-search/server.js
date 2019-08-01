@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // DB URL
 const MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost/mongoHeadlines';
+  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks';
 
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
