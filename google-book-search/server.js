@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const routes = require('./routes');
 
 // For Heroku
 const PORT = process.env.PORT || 3000;
@@ -20,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Define API routes here
-// require('./app/routes/apiRoutes')(app);
+app.use(routes);
 
 // DB URL
 const MONGODB_URI =
