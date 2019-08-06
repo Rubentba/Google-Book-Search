@@ -11,7 +11,7 @@ function Jumbotron({ children }) {
       }}
       className="jumbotron"
     >
-      {children} a
+      {children}
     </div>
   );
 }
